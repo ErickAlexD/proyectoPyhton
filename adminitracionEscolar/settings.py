@@ -26,10 +26,10 @@ SECRET_KEY = 'django-insecure-2@3&kx*^wuthhdoq^qvd^^o=z(we%5rq7ux3#42chv&&#(%m5+
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+"""
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
-
+"""
 
 # Application definition
 
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.preinscripcion',
+    'preinscripcion',
 ]
 
 MIDDLEWARE = [
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'adminitracionEscolar.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':  'adminstracion_escolar_db',
+        'NAME':  'proyecto_escuela_db',
         'USER': 'postgres',
         'PASSWORD': 'user_root',
         'HOST':'localhost',
@@ -112,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'es-mx'
+LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
